@@ -1,9 +1,11 @@
+import { useState } from "react";
 import Button from "../../components/Button/Button";
 import MealItem from "../../components/MealItem/MealItem";
 import MealSelection from "../../components/MealSelection/MealSelection";
 import PracticeProgress from "../../components/PracticeProgress/PracticeProgress";
 import ProcessGraph from "../../components/ProcessGraph/ProcessGraph";
 import "./Home.css"
+import ButtonScrollTop from "../../components/Button/ButtonScrollTop";
 
 const mealSelections = [
   {name: "Morning", icon:"/eat.png"},
@@ -12,20 +14,20 @@ const mealSelections = [
   {name: "Snack", icon:"/icon_cup.png"},
 ]
 
-const mealItems = [
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-  {backgroundImage: "/m01.png",desc:"5.21.Morning"},
- 
-]
 
 function Home() {
-    
+    const [mealItems, setMealItems] = useState([
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+     
+    ])
+
     return (
       <>
        <div className="Home__record">
@@ -55,13 +57,18 @@ function Home() {
                   ))
                 }
             </div>
+            <Button title={"Hello"} handleClick={()=>{
+              setMealItems([
+                ...mealItems,
+                {backgroundImage: "/m01.png",desc:"5.21.Morning"}
+              ])
+          }}/>
           </div>
           <div className="Button">
-            <img src="/component_scroll.png"/>
+            <ButtonScrollTop/>
           </div>
         </div>
         <div>
-          <Button title={"Hello"}/>
         </div>
       </>
     );

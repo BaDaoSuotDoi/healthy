@@ -2,10 +2,10 @@ import React from "react";
 import "./Button.css";
 import PropTypes from 'prop-types';
 
-const Button = ({ title }) => {
+const Button = ({ title, handleClick }) => {
   return (
-    <div className="Button">   
-        <img src={"button.png"} width={"20%"}/>
+    <div className="Button" onClick={handleClick}>   
+        <img src={"button.png"}/>
         <div className="Button_title">{title}</div>
     </div>
   );
@@ -14,6 +14,7 @@ const Button = ({ title }) => {
 
 Button.propTypes = {
     title: PropTypes.string.isRequired,
+    handleClick: PropTypes.func.isRequired,
 };
 
 export default Button;

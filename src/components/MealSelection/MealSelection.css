@@ -1,13 +1,17 @@
 .MealSelection{
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100px;
-    height: 110px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    position: relative;
+}
+
+.MealSelection__wrap__icon{
+    display: flex;
+    justify-content: center;
 }
 
 .MealSelection__icon{
@@ -16,6 +20,11 @@
 }
 
 .MealSelection__name{
-    padding-top: 5px;
     color: white;
+}
+
+.MealSelection__wrap_data{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
 }
