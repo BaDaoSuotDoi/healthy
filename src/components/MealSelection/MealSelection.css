@@ -1,0 +1,21 @@
+.MealSelection{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.MealSelection__icon{
+    width: 40px;
+    height: 40px;
+}
+
+.MealSelection__name{
+    padding-top: 5px;
+    color: white;
+}

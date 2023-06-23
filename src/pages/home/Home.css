@@ -1,0 +1,40 @@
+.Home__record{
+    display: flex;
+    align-items: end;
+}
+
+.Content__meal{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.Container{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.Content{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Content__meal__item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Button{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.Content__meal_item__wrap{
+    width: 24%;
+    padding: 2px;
+}

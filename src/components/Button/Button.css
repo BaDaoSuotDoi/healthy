@@ -1,0 +1,11 @@
+.Button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button_title{
+    position: absolute;
+    color: white;
+}
