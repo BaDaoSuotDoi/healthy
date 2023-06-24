@@ -3,13 +3,17 @@ import './App.css';
 import Home from './pages/home/Home';
 import Record from './pages/record/Record';
 import Extend from './pages/extend/Extend';
+import Layout from './layout/Layout';
 
 function App() {
   return (
     <>
-     <Home/>
-     {/* <Record/> */}
-      {/* <Extend/> */}
+      <Layout>
+        {/* <Home/> */}
+         {/* <Record/> */}
+      <Extend/>
+      </Layout>
+
     </>
   );
 }

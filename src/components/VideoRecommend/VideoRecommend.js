@@ -3,34 +3,8 @@ import "./VideoRecommend.css";
 import PropTypes from 'prop-types';
 import MealItem from "../MealItem/MealItem";
 
-const videoRecommends = [
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-    tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-    tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-    tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-    tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-    tags: ["AAA","BBB","CCC"]
-    },
-    {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-    tags: ["AAA","BBB","CCC"]
-    },
-];
 
-const VideoRecommend = () => {
+const VideoRecommend = ({videoRecommends}) => {
   return (
     <div className="VideoRecommend" >  
         {
@@ -49,8 +23,11 @@ const VideoRecommend = () => {
             ))
         } 
     </div>
-  );
- 
+  ); 
+};
+
+VideoRecommend.propTypes = {
+    videoRecommends:  PropTypes.array.isRequired,
 };
 
 export default VideoRecommend;

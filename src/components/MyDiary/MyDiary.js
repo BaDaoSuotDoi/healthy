@@ -2,16 +2,6 @@ import React from "react";
 import "./MyDiary.css";
 import PropTypes from 'prop-types';
 
-const diaryItems = [
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-]
 
 const DiaryItem = ({date, time, title, content})=>{
     return (
@@ -23,7 +13,7 @@ const DiaryItem = ({date, time, title, content})=>{
         </div>
     )
 }
-const MyDiary = () => {
+const MyDiary = ({diaryItems}) => {
   return (
     <div className="MyDiary" style={{ width:window.innerWidth*0.75}} >   
        <div className="MyDiary__title">MY DIARY</div>
@@ -42,7 +32,7 @@ const MyDiary = () => {
 };
 
 MyDiary.propTypes = {
-   
+    diaryItems:  PropTypes.array.isRequired,
 };
 
 export default MyDiary;

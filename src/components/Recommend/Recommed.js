@@ -12,7 +12,7 @@ const recommendItems = [
 const RecommendItem = ({ title, desc }) => {
     return (
       <div className="RecommendItem">   
-          <div className="RecommendItem--primary">{title}</div>
+          <div className="RecommendItem__title">{title}</div>
           <div className="RecommendItem--border"></div>
           <div>{desc}</div>
       </div>

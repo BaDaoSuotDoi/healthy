@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../../components/Button/Button";
 import MealItem from "../../components/MealItem/MealItem";
 import MealSelection from "../../components/MealSelection/MealSelection";
@@ -14,7 +14,6 @@ const mealSelections = [
   {name: "Snack", icon:"/icon_cup.png"},
 ]
 
-
 function Home() {
     const [mealItems, setMealItems] = useState([
       {backgroundImage: "/m01.png",desc:"5.21.Morning"},
@@ -25,8 +24,11 @@ function Home() {
       {backgroundImage: "/m01.png",desc:"5.21.Morning"},
       {backgroundImage: "/m01.png",desc:"5.21.Morning"},
       {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-     
     ])
+
+    useEffect(()=>{
+      document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+    },[mealItems])
 
     return (
       <>
@@ -52,20 +54,20 @@ function Home() {
                 {
                   mealItems.map((item,index)=>(
                     <div key={index} className="Content__meal_item__wrap">
-                     <MealItem backgroundImage={item.backgroundImage} desc={item.desc}/>
+                      <MealItem backgroundImage={item.backgroundImage} desc={item.desc}/>
                     </div>  
                   ))
                 }
             </div>
-            <div style={{width:'30%'}}>
-              <Button title={"Hello"} handleClick={()=>{
+            <div style={{width:'30%', marginBottom:'65px'}}>
+              <Button title={"記録をもっと見る"} handleClick={()=>{
                   setMealItems([
                     ...mealItems,
                     {backgroundImage: "/m01.png",desc:"5.21.Morning"},
                     {backgroundImage: "/m01.png",desc:"5.21.Morning"},
                     {backgroundImage: "/m01.png",desc:"5.21.Morning"},
                     {backgroundImage: "/m01.png",desc:"5.21.Morning"}
-                  ])
+                  ]);
               }}/>
             </div>
           </div>
