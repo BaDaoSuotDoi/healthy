@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
 import Button from "../../components/Button/Button";
-import MealItem from "../../components/MealItem/MealItem";
-import MealSelection from "../../components/MealSelection/MealSelection";
-import PracticeProgress from "../../components/PracticeProgress/PracticeProgress";
-import ProcessGraph from "../../components/ProcessGraph/ProcessGraph";
 import "./Record.css"
 import ButtonScrollTop from "../../components/Button/ButtonScrollTop";
 import RecordSelection from "../../components/RecordSelection/RecordSelection";
@@ -13,9 +9,9 @@ import MyDiary from "../../components/MyDiary/MyDiary";
 
 
 const recordSelections = [
-    {title: "BODY RECORD",desc:"hello my record",backgroundImg:"/recordBody.png"},
-    {title: "MY EXERCISE",desc:"hello my record",backgroundImg:"/recordBody.png"},
-    {title: "MY DIARY",desc:"hello my record",backgroundImg:"/recordBody.png"},
+    {title: "BODY RECORD",desc:"自分のカラダの記録",backgroundImg:"/recordBody.png"},
+    {title: "MY EXERCISE",desc:"自分の運動の記録",backgroundImg:"/recordBody.png"},
+    {title: "MY DIARY",desc:"自分の日記",backgroundImg:"/recordBody.png"},
 ]
 
 function Record() {

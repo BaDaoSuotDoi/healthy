@@ -10,8 +10,8 @@ function App() {
     <>
       <Layout>
         {/* <Home/> */}
-         {/* <Record/> */}
-      <Extend/>
+         <Record/>
+      {/* <Extend/> */}
       </Layout>
 
     </>

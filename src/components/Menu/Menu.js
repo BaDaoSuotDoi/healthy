@@ -10,6 +10,7 @@ const menus =[
   {id:5, name:"コラム一覧"},
   {id:6, name:"設定"}
 ]
+
 const Menu = ({menuId, setMenuId}) => {
 
   return (
