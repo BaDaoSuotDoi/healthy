@@ -13,21 +13,23 @@ const mealSelections = [
   {name: "Dinner", icon:"/eat.png"},
   {name: "Snack", icon:"/icon_cup.png"},
 ]
-
+ 
 function Home() {
     const [mealItems, setMealItems] = useState([
       {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/h2.png",desc:"5.21.Morning"},
+      {backgroundImage: "/h3.png",desc:"5.21.Morning"},
+      {backgroundImage: "/h4.png",desc:"5.21.Morning"},
       {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
-      {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+      {backgroundImage: "/h5.png",desc:"5.21.Morning"},
+      {backgroundImage: "/h6.png",desc:"5.21.Morning"},
+      {backgroundImage: "/h7.png",desc:"5.21.Morning"},
     ])
 
     useEffect(()=>{
-      document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(()=>{
+        document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+      },200)
     },[mealItems])
 
     return (

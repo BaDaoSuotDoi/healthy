@@ -3,14 +3,15 @@ import "./BodyRecord.css";
 import PropTypes from 'prop-types';
 import ProcessGraph from "../ProcessGraph/ProcessGraph";
 
-const Button = ({isSelected})=>{
+const Button = ({isSelected, label})=>{
     return (
         <button className={`ButtonRecord ${isSelected ? "Button--clicked": "Button--unclick"}`}
             >
-            Click
+            {label}
         </button>
     )
 }
+
 const BodyRecord = ({  }) => {
   return (
     <div className="BodyRecord" >   
@@ -23,10 +24,10 @@ const BodyRecord = ({  }) => {
         </div> 
        <ProcessGraph graphWidth={window.innerWidth * 0.75} graphHeight={200}/>
        <div className="ButtonList">
-            <Button/>
-            <Button/>
-            <Button/>
-            <Button isSelected={true}/>
+            <Button label={"日"}/>
+            <Button label={"週"}/>
+            <Button label={"月"}/>
+            <Button label={"年"} isSelected={true}/>
        </div>
     </div>
   );

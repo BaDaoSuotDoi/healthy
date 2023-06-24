@@ -3,10 +3,10 @@ import "./Recommend.css";
 import PropTypes from 'prop-types';
 
 const recommendItems = [
-    {title:"RECOMMENDED COLUMN", desc:"My recommend"},
-    {title:"RECOMMENDED COLUMN", desc:"My recommend"},
-    {title:"RECOMMENDED COLUMN", desc:"My recommend"},
-    {title:"RECOMMENDED COLUMN", desc:"My recommend"}
+    {title:"RECOMMENDED COLUMN", desc:"オススメ"},
+    {title:"RECOMMENDED DIET", desc:"ダイエット"},
+    {title:"RECOMMENDED BEAUTY", desc:"美容"},
+    {title:"RECOMMENDED HEALTH", desc:"健康"}
 ]
 
 const RecommendItem = ({ title, desc }) => {

@@ -70,7 +70,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     flex-wrap: wrap;
-    height: 200px;
+    height: 220px;
     margin-left: 30px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -80,4 +80,8 @@
 
 .MyExercise__item--width{
     min-width: 47%;
+}
+
+.ExerciseItem__body__name{
+    font-family: "Hiragino";
 }

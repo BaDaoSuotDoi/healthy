@@ -21,18 +21,21 @@ const recordSelections = [
 function Record() {
 
     const [diaryItems, setDiaryItems] = useState([
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-        {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+        
       ])
     
     useEffect(()=>{
-      document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(()=>{
+        document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+      },200)
     },[diaryItems])
 
     return (
@@ -62,10 +65,10 @@ function Record() {
                 <Button title="Record" handleClick={()=>{
                   setDiaryItems([
                     ...diaryItems,
-                    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-                    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-                    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
-                    {date:'2021.05.21', time:'23.25',title:'Hello baby', content:"Mattermost Boards combines project management tools with messaging and collaboration for teams of all sizes. To access and use Mattermost Boards, install or upgrade to Mattermost v6.0 or later as a self-hosted server. After logging into Mattermost, select the menu in the top left corner and select Boards."},
+                    {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+                    {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+                    {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
+                    {date:'2021.05.21', time:'23.25',title:'私の日記の記録が一部表示されます。', content:"テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…"},
                   ])
               }}/>
             </div>

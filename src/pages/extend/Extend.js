@@ -7,36 +7,38 @@ import "./Extend.css";
 
 function Extend() {
     const [videoRecommends, setVideoRecommends] = useState([
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-            tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+            tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-            tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r2.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+            tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r3.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+        tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r4.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+        tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r5.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+        tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r6.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+        tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r7.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+        tags: ["魚料理","和食","DHA"]
         },
-        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-        tags: ["AAA","BBB","CCC"]
+        {backgroundImage: "/r8.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+        tags: ["魚料理","和食","DHA"]
         },
     ])
 
     useEffect(()=>{
-        document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(()=>{
+            document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });
+        },200)
       },[videoRecommends])
-
+ 
     return (
       <>
         <div className="Extend__comp">
@@ -52,20 +54,20 @@ function Extend() {
         </div>
         <div className="Extend__comp">
             <div style={{ width:'30%', marginBottom:'65px'}}>
-                <Button title="Extend"  handleClick={()=>{
+                <Button title="コラムをもっと見る"  handleClick={()=>{
                     setVideoRecommends([
                         ...videoRecommends,
-                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-                        tags: ["AAA","BBB","CCC"]
+                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+                        tags: ["魚料理","和食","DHA"]
                         },
-                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-                            tags: ["AAA","BBB","CCC"]
+                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+                            tags: ["魚料理","和食","DHA"]
                         },
-                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-                        tags: ["AAA","BBB","CCC"]
+                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+                        tags: ["魚料理","和食","DHA"]
                         },
-                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"Mattermost is an open source platform for secure collaboration across the entire software development lifecycle",
-                        tags: ["AAA","BBB","CCC"]
+                        {backgroundImage: "/video.png",desc:"5.21.Morning", title:"魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ…",
+                        tags: ["魚料理","和食","DHA"]
                         },
                     ]);
                 }}/>

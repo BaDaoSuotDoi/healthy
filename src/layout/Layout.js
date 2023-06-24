@@ -3,9 +3,9 @@ import Menu from "../components/Menu/Menu";
 import "./Layout.css";
 
 const tabs = [
-    {id: 1, icon: "/icon_memo.png", name:"Memo"},
-    {id: 2, icon: "/icon_archive.png", name:"Archive"},
-    {id: 3, icon: "/icon_info.png", name:"Info"},
+    {id: 1, icon: "/icon_memo.png", name:"自分の記録"},
+    {id: 2, icon: "/icon_archive.png", name:"チャレンジ"},
+    {id: 3, icon: "/icon_info.png", name:"お知らせ"},
 ]
 
 function Header(){
@@ -47,7 +47,7 @@ function Header(){
     )
 }
 
-const footerItems =["会員登録","会員登録","会員登録","会員登録"]
+const footerItems =["会員登録","運営会社","利用規約","個人情報の取扱について","特定商取引法に基づく表記","お問い合わせ"]
 function Footer(){
     return (
         <div className="Footer"  id="footer">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 var greens = [25, 50, 75,30, 25, 60, 100, 40, 50, 25, 30, 50];
 var yellows = [100,20,30,50,30,70, 75,30, 25, 60, 100,15];
-var labels = ["1A", "2A", "3A", "4A", "5A", "6A", "7A", "8A", "9A", "10A","11A","12A"]
+var labels = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月","11月","12月"]
 
 const dotRadius = 3;
 let canvasHeight = 260;

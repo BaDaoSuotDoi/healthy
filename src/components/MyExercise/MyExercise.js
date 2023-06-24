@@ -3,18 +3,18 @@ import "./MyExercise.css";
 import PropTypes from 'prop-types';
 
 const exercises = [
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
-    {name:"ABC", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
+    {name:"家事全般（立位・軽い）", kcal:"26kcal", time:"10 min"},
 ]
 
 const ExerciseItem = ({item})=>{
@@ -23,7 +23,7 @@ const ExerciseItem = ({item})=>{
             <div className="ExerciseItem__body">
                 <div className="ExerciseItem__body__dot"></div>
                 <div className="ExerciseItem__body_content">
-                    <div>{item.name}</div>
+                    <div className="ExerciseItem__body__name">{item.name}</div>
                     <div className="ExerciseItem--primary">{item.kcal}</div>
                 </div>
                 <div className="ExerciseItem--primary">{item.time}</div>

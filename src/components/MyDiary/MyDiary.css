@@ -1,6 +1,7 @@
 .MyDiary__title{
     font-size: 22px;
     margin-bottom: 10px;
+    font-family: "Inter";
 }
 
 .MyDiary__content{
@@ -12,7 +13,8 @@
 .MyDiary__item{
     width: 24%;
     border: 1px solid #414141;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .DiaryItem{
@@ -30,4 +32,5 @@
 
 .DiaryItem__title , .DiaryItem__content{
     font-size: 12px;
+    font-family: "Hiragino";
 }
