@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 const Button = ({ title, handleClick }) => {
   return (
     <div className="Button" onClick={handleClick}>   
-        <img src={"button.png"}/>
         <div className="Button_title">{title}</div>
     </div>
   );

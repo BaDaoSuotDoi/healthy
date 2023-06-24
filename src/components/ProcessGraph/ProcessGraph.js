@@ -1,12 +1,13 @@
 import { useLayoutEffect } from "react";
+import PropTypes from 'prop-types';
 
 var greens = [25, 50, 75,30, 25, 60, 100, 40, 50, 25, 30, 50];
 var yellows = [100,20,30,50,30,70, 75,30, 25, 60, 100,15];
 var labels = ["1A", "2A", "3A", "4A", "5A", "6A", "7A", "8A", "9A", "10A","11A","12A"]
 
 const dotRadius = 3;
-const canvasHeight = 260;
-const canvasWidth = window.innerWidth * 0.6;
+let canvasHeight = 260;
+let canvasWidth = window.innerWidth * 0.6;
 const paddingBottom = 30;
 const paddingTop = 10;
 
@@ -67,15 +68,25 @@ function drawGraphProcess(greens, yellows) {
     drawLine(ctx,yellows,"#FFCC21");
 }
 
-function ProcessGraph() {
+function ProcessGraph({graphWidth,graphHeight}) {
     useLayoutEffect(()=>{
+        if(graphHeight){
+            canvasHeight = graphHeight;
+        }
+        if(graphWidth){
+            canvasWidth = graphWidth;
+        }
         drawGraphProcess(greens,yellows);
     },[])
 
     return (
         <canvas id="processGraph"></canvas>
     );
-  }
-  
+}
+
+ProcessGraph.propTypes = {
+    graphWidth: PropTypes.number.isRequired,
+};
+
 export default ProcessGraph;
   

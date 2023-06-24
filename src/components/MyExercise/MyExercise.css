@@ -1,0 +1,83 @@
+.MyExercise{
+    color: white;
+    background-color: black;
+    font-size: 15px;
+}
+
+#scroll::-webkit-scrollbar {
+	width: 6px;
+	background-color: #777777;
+    border-radius: 30px;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+	background-color: #FFCC21;
+    border-radius: 30px;
+}
+
+.ExerciseItem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.ExerciseItem__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2px;
+}
+
+.ExerciseItem__body__dot{
+    background-color: white;
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    margin-top: 3px;
+}
+
+.ExerciseItem__body_border{
+    background-color: #777777;
+    height: 1px;
+    margin-top: 1px;
+}
+
+.ExerciseItem__body_content{
+    width: 75%;
+}
+
+.ExerciseItem--primary{
+    color: #FFCC21;
+}
+
+.MyExercise__title{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.MyExercise__title__name{
+    margin: 20px 20px 10px 20px;
+}
+
+.MyExercise__title__date{
+    font-size: 22px;
+}
+
+.MyExercise__content{
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    height: 200px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.MyExercise__item--width{
+    min-width: 47%;
+}

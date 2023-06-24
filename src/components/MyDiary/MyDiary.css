@@ -1,0 +1,33 @@
+.MyDiary__title{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.MyDiary__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.MyDiary__item{
+    width: 24%;
+    border: 1px solid #414141;
+    margin-bottom: 5px;
+}
+
+.DiaryItem{
+    padding: 15px;
+}
+
+.DiaryItem__date{
+    font-size: 18px;
+}
+
+.DiaryItem__time{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.DiaryItem__title , .DiaryItem__content{
+    font-size: 12px;
+}

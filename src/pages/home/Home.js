@@ -57,17 +57,22 @@ function Home() {
                   ))
                 }
             </div>
-            <Button title={"Hello"} handleClick={()=>{
-              setMealItems([
-                ...mealItems,
-                {backgroundImage: "/m01.png",desc:"5.21.Morning"}
-              ])
-          }}/>
-          </div>
-          <div className="Button">
-            <ButtonScrollTop/>
+            <div style={{width:'30%'}}>
+              <Button title={"Hello"} handleClick={()=>{
+                  setMealItems([
+                    ...mealItems,
+                    {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+                    {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+                    {backgroundImage: "/m01.png",desc:"5.21.Morning"},
+                    {backgroundImage: "/m01.png",desc:"5.21.Morning"}
+                  ])
+              }}/>
+            </div>
           </div>
         </div>
+        <div className="ButtonScrollTop"  style={{top: window.innerHeight/2, left: window.innerWidth* 10/11}}>
+            <ButtonScrollTop/>
+          </div>
         <div>
         </div>
       </>

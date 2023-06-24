@@ -1,0 +1,38 @@
+.RecordSelection{
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.RecordSelection__background{
+    background-color: #FFCC21;
+    padding: 20px;
+}
+
+.RecordSelection__image{
+    background-color: #2E2E2E;
+    width: 200px;
+    height: 200px;
+}
+
+.RecordSelection__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+
+.RecordSelection__content__title{
+    font-size: 25px;
+    color: #FFCC21;
+    margin-bottom: 10px;
+}
+
+.RecordSelection__content__desc{
+    background-color: #FF963C;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    font-size: 14px;
+    text-align: center;
+}
